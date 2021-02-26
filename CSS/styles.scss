@@ -1,0 +1,202 @@
+$colorazul:rgb(93, 101, 214);
+$colorazulclaro:rgba(125, 197, 238, 0.808);
+$colorblanco:white;
+$colorazuldisabled:rgba(60, 120, 155, 0.808);
+$colorgris:rgb(223, 208, 208);
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    header {
+        height: 100px;
+        width: 100%;
+        background-color: $colorazul;
+        color: $colorblanco;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+    }
+
+    main {
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 65% 35%;
+        grid-template-rows: 55% 45%;
+
+        #DivJuego {
+            grid-column-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+
+            display: flex;
+            flex-direction: column;
+
+            #cabecerajuego {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                height: 70px;
+                width: 100%;
+                background-color: $colorazulclaro;
+                border-bottom: 1px solid $colorazul;
+
+                #NuevaPartida {
+                    margin-left: 20px;
+                    background-color: $colorblanco;
+                    border-radius: 7px;
+                    height: 30px;
+                    color: $colorazul;
+                    border-color: $colorazul;
+
+                    &:hover {
+                        background-color: $colorazul;
+                        color: $colorblanco;
+                    }
+
+                    &:disabled {
+                        background-color: $colorazuldisabled;
+                        color: $colorblanco;
+                    }
+                }
+
+                #DivContador {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 50px;
+                    width: 130px;
+                    margin-right: 20px;
+                    color: $colorazul;
+
+                    #contador {
+                        /*  background-color: $colorazulclaro;
+                        border-color: $colorazulclaro; */
+                        background: none;
+                        border: 0;
+                        color: inherit;
+                        font-size: 20px;
+                    }
+                }
+            }
+
+            #cuerpojuego {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                width: 100%;
+
+                #DivCiudades {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    height: 40%;
+                    .ciudades{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: $colorgris;
+                        height: 60%;
+                        width: 11%;
+                        border: 2px solid $colorazul;
+                        border-radius: 10px;
+                        color: $colorblanco;
+                        background-color: $colorazulclaro;
+                        font-size: 17px;
+                        
+                    }
+                }
+
+                #DivPaises {
+                    display: flex;
+                    flex-direction:  row;
+                    justify-content: space-around;
+                    align-items: center;
+                    height: 100%;
+                    border-top: 1px $colorazul dashed;
+                    .paises{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        background-color: $colorblanco;
+                        color: $colorazul;
+                        height: 60%;
+                        width: 15%;
+                        border:2px solid $colorazul;
+                        border-radius: 10px;
+                        .nombrepaises{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            background-color: $colorgris;
+                            border-bottom:2px solid $colorazul;                            
+                            width: 100%;
+                            height: 40%;
+                            border-radius:10px;
+                        }
+                        .cuerpopaises{
+                            display: flex;
+                            height: 100%;
+                            width: 100%;
+                            border-radius: 10px;
+                            background-color: $colorblanco;
+                        }
+                    }
+                }
+
+            }
+
+
+
+        }
+
+        //DIV MAPA
+        #DivMapa {
+            height: 100%;
+            width: 100%;
+            border-left: 1px solid $colorazul;
+
+            #mapa {
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        #DivGraficas {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-top: 1px solid $colorazul;
+
+            #DivGraficaUno {
+                height: 100%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center
+            }
+
+            #DivGraficaDos {
+                height: 100%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+        }
+    }
+}

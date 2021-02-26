@@ -1,0 +1,170 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+body header {
+  height: 100px;
+  width: 100%;
+  background-color: #5d65d6;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+body main {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 65% 35%;
+  grid-template-rows: 55% 45%;
+}
+body main #DivJuego {
+  grid-column-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  display: flex;
+  flex-direction: column;
+}
+body main #DivJuego #cabecerajuego {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  width: 100%;
+  background-color: rgba(125, 197, 238, 0.808);
+  border-bottom: 1px solid #5d65d6;
+}
+body main #DivJuego #cabecerajuego #NuevaPartida {
+  margin-left: 20px;
+  background-color: white;
+  border-radius: 7px;
+  height: 30px;
+  color: #5d65d6;
+  border-color: #5d65d6;
+}
+body main #DivJuego #cabecerajuego #NuevaPartida:hover {
+  background-color: #5d65d6;
+  color: white;
+}
+body main #DivJuego #cabecerajuego #NuevaPartida:disabled {
+  background-color: rgba(60, 120, 155, 0.808);
+  color: white;
+}
+body main #DivJuego #cabecerajuego #DivContador {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 130px;
+  margin-right: 20px;
+  color: #5d65d6;
+}
+body main #DivJuego #cabecerajuego #DivContador #contador {
+  /*  background-color: $colorazulclaro;
+  border-color: $colorazulclaro; */
+  background: none;
+  border: 0;
+  color: inherit;
+  font-size: 20px;
+}
+body main #DivJuego #cuerpojuego {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+body main #DivJuego #cuerpojuego #DivCiudades {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 40%;
+}
+body main #DivJuego #cuerpojuego #DivCiudades .ciudades {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dfd0d0;
+  height: 60%;
+  width: 11%;
+  border: 2px solid #5d65d6;
+  border-radius: 10px;
+  color: white;
+  background-color: rgba(125, 197, 238, 0.808);
+  font-size: 17px;
+}
+body main #DivJuego #cuerpojuego #DivPaises {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  border-top: 1px #5d65d6 dashed;
+}
+body main #DivJuego #cuerpojuego #DivPaises .paises {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  color: #5d65d6;
+  height: 60%;
+  width: 15%;
+  border: 2px solid #5d65d6;
+  border-radius: 10px;
+}
+body main #DivJuego #cuerpojuego #DivPaises .paises .nombrepaises {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dfd0d0;
+  border-bottom: 2px solid #5d65d6;
+  width: 100%;
+  height: 40%;
+  border-radius: 10px;
+}
+body main #DivJuego #cuerpojuego #DivPaises .paises .cuerpopaises {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  background-color: white;
+}
+body main #DivMapa {
+  height: 100%;
+  width: 100%;
+  border-left: 1px solid #5d65d6;
+}
+body main #DivMapa #mapa {
+  height: 100%;
+  width: 100%;
+}
+body main #DivGraficas {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid #5d65d6;
+}
+body main #DivGraficas #DivGraficaUno {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main #DivGraficas #DivGraficaDos {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

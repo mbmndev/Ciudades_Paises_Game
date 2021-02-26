@@ -1,0 +1,16 @@
+{
+  "name": "juego_ciudades_y_paises",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^7.20.0",
+    "jsdoc": "^3.6.6"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "miguel",
+  "license": "ISC"
+}

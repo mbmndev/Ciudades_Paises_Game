@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciudades y Paises Game</title>
+    
+    <!--JQUERY-->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    
+    <!--MAPA-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+    <link rel="stylesheet" href="./CSS/styles.css">
+</head>
+
+<body>
+    <header>
+        <p>Ciudades y Paises </p>
+    </header>
+    <main>
+        <!--DIV DEL JUEGO-->
+        <div id="DivJuego">
+            <div id="cabecerajuego">
+                <input type="button" id="NuevaPartida" value="Nueva Partida">
+                <div id="DivContador">
+                    <!--Contador-->
+                    <span>Tiempo:</span>
+                    <input id="contador">   
+                </div>
+            </div>
+            <div id="cuerpojuego">
+                <div id="DivCiudades"></div>
+                <div id="DivPaises"></div>
+            </div>
+        </div>
+        <!--DIV DEL MAPA-->
+        <div id="DivMapa">
+            <div id="mapa"></div>
+        </div>
+        <!--DIV DE GRAFICAS-->
+        <div id="DivGraficas">
+            <div id="DivGraficaUno">
+                <div id="curve_chart"></div>
+            </div>
+            <div id="DivGraficaDos">
+                <div id="piechart"></div>
+            </div>
+        </div>
+    </main>
+
+    <!--MAPA-->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+    <!--CHARTS-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <!--JQUERY-->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="module" src="./JS/main.js"></script>
+</body>
+</html>
+
+
